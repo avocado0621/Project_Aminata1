@@ -94,6 +94,7 @@ body {
 .profile-photo {
     background-image: url("images/AB Productions.jpg");
     background-size: auto;
+    background-size: contain;
 }
 
 /* Add a card effect for articles */
@@ -119,6 +120,10 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+.content {
+    min-height: calc(100vh - 40vh);
 }
 
 /* Footer */
