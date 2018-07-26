@@ -22,7 +22,7 @@ body {
 .header {
     padding: 30px;
     text-align: center;
-    background: white;
+    background: white
 }
 
 .header h1 {
@@ -99,6 +99,7 @@ body {
 }
 .profile-photo {
     background-image: url("images/AB Productions.jpg");
+    background-repeat: no-repeat;
     background-size: auto;
     background-size: contain;
 }
@@ -139,9 +140,25 @@ body {
     background: #ddd;
     margin-top: 20px;
 }
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    #container {
+        width: 100%;
+    }
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+    body{ 
+        padding: 0;
+    }
+    .img1 img {
+        height: 15em;
+    }
     #container {
         width: 100%;
     }

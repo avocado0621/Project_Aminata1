@@ -5,7 +5,7 @@ $(function(){
 
 	var x = $("#myTopnav");
 	$(".icon").click(function() {
-		if (.hasClass("topnav")) {
+		if (x.hasClass("topnav")) {
 			x.toggleClass("responsive");
 		}
 	});
